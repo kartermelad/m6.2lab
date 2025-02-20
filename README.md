@@ -1,8 +1,7 @@
-# web-dev-starter
+# M6.2 Lab
 
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
+This repository contains the source code and resources for the M6.2 Lab project.
+The project demonstrates CSS styling for a printable letterhead.
 
 ## Getting Started
 

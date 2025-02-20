@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width">
     <title>Fancy letterheaded paper</title>
     <link rel="stylesheet" href="css/style.css">
-    
   </head>
   <body>
-
     <article>
-      <h1>Awesome<br>Company</h1>
 
+      <h1>Awesome<br>Company</h1>
       <address>
         <p>The Awesome Company</p>
         <p>102-112 Frail Bend Bridge<br>
@@ -20,6 +18,62 @@
         HX3 9ZQ<br>
         UK</p>
       </address>
+
+      <h2>Lorem Ipsum</h2>
+
+      <div class="container">
+        <div class="column">
+          <p><em>“Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...”</em></p>
+          <p>“There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...”</p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Duis tincidunt odio nec tellus dignissim luctus. Pellentesque lacus odio, 
+            sodales vitae est id, consectetur rhoncus est. Suspendisse semper cursus congue. 
+            Duis eget commodo tortor, sed feugiat turpis. Phasellus porttitor enim ut eleifend finibus. 
+            Maecenas semper iaculis lorem, eu congue lorem condimentum convallis. Proin id diam id orci dapibus aliquam. 
+          </p>
+        </div>
+
+        <div class="column">
+          <p>
+            Mauris odio magna, placerat non ipsum at, rhoncus accumsan odio. 
+            Maecenas volutpat viverra quam quis efficitur. Nullam eleifend iaculis pharetra. 
+            Donec suscipit urna lorem, eu fringilla est volutpat nec. Quisque aenean aliquet, 
+            nulla quis dictum bibendum, turpis ante tempus magna, et ullamcorper quam turpis id quam. 
+            Donec ac sem et justo pharetra rutrum vitae eget lacus. 
+            Cras scelerisque sed velit in placerat. Praesent vehicula mauris at sagittis pharetra. 
+            Aliquam sapien condimentum malesuada. Vestibulum magna neque, 
+            lacinia eu sodales vitae, consequat non risus. 
+            Donec dui purus, ultricies quis tortor a, hendrerit venenatis libero. 
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>Choose an option</h3>
+        <label>
+          <input type="radio" name="myRadio" value="Option 1"> Option 1
+        </label>
+        <label>
+          <input type="radio" name="myRadio" value="Option 2"> Option 2
+        </label>
+        <label>
+          <input type="radio" name="myRadio" value="Option 3"> Option 3
+        </label>
+        <button onclick="showSelectedOption()">Show Selected Option</button>
+      </div>
+
     </article>
+
+    <script>
+      function showSelectedOption() {
+        const selected = document.querySelector('input[name="myRadio"]:checked');
+        if (selected) {
+          alert('You selected: ' + selected.value);
+        } else {
+          alert('No radio button selected.');
+        }
+      }
+    </script>
   </body>
 </html>
